@@ -1,0 +1,154 @@
+* {
+  padding: 5px;
+  margin: 5px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  line-height: 1.5;
+  font-style: normal;
+  background: #0b0b0c;
+  color: #f5f5f7;
+}
+
+/* ── Grid Layout ── */
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'nav_bar nav_bar'
+    'main main-img'
+    'footer footer';
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav_bar {
+  grid-area: nav_bar;
+  display: flex;
+  justify-content: right;
+}
+
+.main {
+  grid-area: main;
+}
+
+.main_figure {
+  grid-area: main-img;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* ── Logo ── */
+#logo {
+  width: 18%;
+  display: block;
+}
+
+/* ── Navigation ── */
+nav a {
+  text-decoration: none;
+  color: #f5f5f7;
+  font-weight: 400;
+  padding: 8px 10px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+
+nav a:hover {
+  border-color: #4d5c3b;
+}
+
+.active {
+  color: #92ad70;
+}
+
+/* ── Buy Tickets CTA ── */
+.cta {
+  display: inline-block;
+  background-color: #4d5c3b;
+  color: #f5f5f7;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 16px;
+}
+
+.cta:hover {
+  background-color: #92ad70;
+  color: #0b0b0c;
+}
+
+/* ── Footer ── */
+footer {
+  border-top: 1px solid rgba(245, 245, 247, 0.12);
+  padding: 18px 16px;
+  text-align: center;
+  color: rgba(245, 245, 247, 0.72);
+}
+
+/* ── Tickets Table ── */
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: fit-content;
+  background-color: #1e2a14;
+  color: #f5f5f7;
+}
+
+tr:nth-child(even) {
+  background-color: #161616;
+}
+
+/* ── Read More / Read Less ── */
+#longIntro {
+  display: none;
+}
+
+#readLess {
+  display: none;
+}
+
+#readMore,
+#readLess {
+  background: none;
+  border: 1px solid #4d5c3b;
+  color: #92ad70;
+  padding: 6px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+/* ── Checkout Form ── */
+form * {
+  margin: auto;
+  text-align: center;
+}
+
+/* ── Buy Tickets Page ── */
+#purchaseForm {
+  display: none;
+  margin-top: 24px;
+}
+
+.buy-btn {
+  background-color: #4d5c3b;
+  color: #f5f5f7;
+  border: none;
+  border-radius: 12px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.buy-btn:hover {
+  background-color: #92ad70;
+  color: #0b0b0c;
+}

@@ -1,0 +1,57 @@
+<meta name="author" content="Your name">
+<meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+<meta name="description" content="MonoMuse website redesign project">
+<title>MonoMuse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/style.css">
+<script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+    <nav class="nav_bar">
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="buytickets.html">Buy Tickets</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+    <main class="main">
+      <h1>Buy Tickets</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket Type</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>General</td>
+            <td>Full access to all permanent and rotating exhibitions. Ideal for adult visitors and first-time guests.</td>
+            <td>$18.00</td>
+          </tr>
+          <tr>
+            <td>Student</td>
+            <td>Full access to all exhibitions at a discounted rate. Valid student ID required at entry.</td>
+            <td>$10.00</td>
+          </tr>
+          <tr>
+            <td>Member</td>
+            <td>Unlimited visits for the year, plus early access to new exhibitions and exclusive member events.</td>
+            <td>$75.00/year</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>

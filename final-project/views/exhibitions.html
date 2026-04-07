@@ -1,0 +1,100 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Your name">
+<meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+<meta name="description" content="Current and upcoming exhibitions at MonoMuse Museum">
+<title>MonoMuse — Exhibitions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/style.css">
+<script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+    <nav class="nav_bar">
+      <button id="hamburger" onclick="toggleNav()">&#9776;</button>
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="buytickets.html">Buy Tickets</a>
+    </nav>
+    <main class="main">
+      <h1>Exhibitions</h1>
+
+      <!-- Gallery Slideshow (4 images) -->
+      <div class="gallery">
+        <button class="gallery-btn" id="galleryPrev" onclick="changeSlide(-1)" aria-label="Previous image">&#8592;</button>
+        <div class="gallery-track">
+          <img class="gallery-img active" src="../static/american-museum-natural-history-amnh-image-11254-272330.jpg" alt="Museum gallery hall with high ceilings and natural light">
+          <img class="gallery-img" src="../static/crete-museum-view-of-a-display-showing-a-clay-bulls-head-and-decorated-vessels-dated-to-the-ancient-minoan-period-heraklion-archeological-museum-2YNXCRW.jpg" alt="Museum display case with ancient artifacts and decorative vessels">
+          <img class="gallery-img" src="../static/natural-history-museum-london-interior-36322294.jpg.webp" alt="Natural history museum interior with grand architecture">
+          <img class="gallery-img" src="../static/360_F_364847940_9BsQrijZgEkWOh3tNBJtHWzWb9fAqKMp.jpg" alt="Museum exhibition space with contemporary art installations">
+        </div>
+        <button class="gallery-btn" id="galleryNext" onclick="changeSlide(1)" aria-label="Next image">&#8594;</button>
+      </div>
+      <p class="gallery-caption" id="galleryCaption">Gallery Hall — Natural Light Wing</p>
+
+      <!-- Current Exhibitions -->
+      <h2>Current Exhibitions</h2>
+
+      <h3>Digital Horizons</h3>
+      <p>An immersive exploration of how digital tools are reshaping the boundaries of visual art. Featuring works by 14 international artists, Digital Horizons presents large-scale projections, generative graphics, and sensor-driven environments that respond to visitor presence. On display through August 2026.</p>
+
+      <h3>Code and Canvas</h3>
+      <p>A meditation on the relationship between algorithm and aesthetics. This exhibition pairs hand-crafted paintings with their computationally generated counterparts, asking visitors to consider what it means to create when the creator is a machine. Running through July 2026.</p>
+
+      <h3>Human Signal</h3>
+      <p>An interactive sculpture installation exploring human communication in the digital age. Visitors become part of the artwork — their movement, voice, and biometric data are woven into a live-evolving soundscape and visual display. Permanent collection.</p>
+
+      <!-- Upcoming -->
+      <h2>Coming Soon</h2>
+      <h3>After the Algorithm — Opening September 2026</h3>
+      <p>A survey of post-AI creative practices, featuring artists who have chosen to reject, subvert, or collaborate with artificial intelligence in their work.</p>
+      <a href="buytickets.html">Reserve your tickets now.</a>
+
+      <!-- Hours and Visitor Info -->
+      <h2>Hours of Operation</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday – Tuesday</td>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <td>Wednesday – Friday</td>
+            <td>11:00 AM – 7:00 PM</td>
+          </tr>
+          <tr>
+            <td>Saturday</td>
+            <td>10:00 AM – 6:00 PM</td>
+          </tr>
+          <tr>
+            <td>Sunday</td>
+            <td>12:00 PM – 5:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Membership / Donation -->
+      <h2>Support MonoMuse</h2>
+      <h3>Membership</h3>
+      <p>Annual membership at $75 grants unlimited visits, early access to new exhibitions, invitations to members-only events, and a 10% discount in the museum shop. <a href="buytickets.html">Become a member today.</a></p>
+
+      <h3>Donations</h3>
+      <p>MonoMuse is a nonprofit organization. Donations of any size help fund emerging artist residencies, free school admission days, and our community outreach programs. To donate, contact us at <strong>donate@monomuse.org</strong> or visit our front desk during museum hours.</p>
+    </main>
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>

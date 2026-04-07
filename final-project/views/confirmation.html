@@ -1,0 +1,47 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Your name">
+<meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+<meta name="description" content="Order confirmation for MonoMuse ticket purchase">
+<title>MonoMuse — Order Confirmation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/style.css">
+<script src="../static/script.js" defer></script>
+</head>
+<body onload="addYear(); loadConfirmation();">
+  <div class="container">
+    <header class="header">
+      <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+    </header>
+    <nav class="nav_bar">
+      <button id="hamburger" onclick="toggleNav()">&#9776;</button>
+      <a href="../index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="exhibitions.html">Exhibitions</a>
+      <a href="tickets.html">Tickets</a>
+      <a href="buytickets.html">Buy Tickets</a>
+    </nav>
+    <main class="main">
+      <div class="confirmation-box">
+        <h1>Order Confirmed!</h1>
+        <p class="confirm-msg">Thank you for your purchase. Your tickets to MonoMuse have been reserved. A confirmation will be sent to the email address you provided.</p>
+        <h2>Order Summary</h2>
+        <table id="confirmTable">
+          <tbody>
+            <tr><th>Visit Date</th><td id="confDate">—</td></tr>
+            <tr><th>Ticket Type</th><td id="confType">—</td></tr>
+            <tr><th>Quantity</th><td id="confQty">—</td></tr>
+            <tr><th>Email</th><td id="confEmail">—</td></tr>
+            <tr><th>Mailing List</th><td id="confMailing">—</td></tr>
+            <tr><th class="total-row">Total Cost</th><td id="confTotal" class="total-row">—</td></tr>
+          </tbody>
+        </table>
+        <a class="cta" href="../index.html">Return to Home</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+  </div>
+</body>
